@@ -1,0 +1,10 @@
+# Створюємо клас MyClass динамічно за допомогою функції type
+MyClass = type('MyClass', (), {})
+
+# Перевірка — створюємо екземпляр
+obj = MyClass()
+
+# Вивід інформації про клас
+print(f"Ім'я класу: {MyClass.__name__}")
+print(f"Тип об'єкта: {type(obj)}")
+print(f"Чи є obj екземпляром MyClass? {'Yes' if isinstance(obj, MyClass) else 'No'}")
